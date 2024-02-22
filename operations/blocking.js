@@ -6,6 +6,7 @@ function moreWork() {
 
 try {
     const data = fs.readFileSync("data/test.txt"); // blocks here until file is read
+    // log the data first and then go to the next line
     console.log(data);
     moreWork();
 }
