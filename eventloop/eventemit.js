@@ -38,3 +38,5 @@ timerEmitter.on(timerEmitter.eventName, () => {
 });
 timerEmitter.addTimerId(foo(2, timerEmitter));
 timerEmitter.removeTimerId(foo(1, timerEmitter));
+
+//settimer gives event id and we want to clean it

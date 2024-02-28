@@ -5,7 +5,7 @@ const foo = (a) => {
   console.log('foo');
   setTimeout(function() {
     bar(a);
-  }, 0);
+  }, 0); // this is async skip it
   baz();
 }
 

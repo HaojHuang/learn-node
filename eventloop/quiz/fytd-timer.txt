@@ -1,1 +1,5 @@
 - In eventloop/timer.js, what will be the order of execution? Briefly explain the order of execution w.r.t the event loop phases.
+
+foo(2)-->skip the bar(2), put it in the callback queue since it is async --> baz () its sync 
+
+--> foo(1) --> skip the bar(2), put it in the callback queue --> baz --> bar(2) --> bar(1)

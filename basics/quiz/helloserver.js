@@ -22,6 +22,8 @@ const server = http.createServer((req, res) => {
     
 })
 
+// the http in main thread the callback function run in event thread
+// after the http estabished the callback happen
 server.listen(port, hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
 })
